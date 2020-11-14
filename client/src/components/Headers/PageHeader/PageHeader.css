@@ -1,9 +1,9 @@
-.header__wrapper{
-  background: #128277;
+.header__wrapper {
+    background: linear-gradient(0deg, rgba(0, 77, 71, 0.7), rgba(0, 77, 71, 0.7)), url("images/header_bg.jpg"), #404149;
+
 }
 
-
-.header__title{
-  font-size: 60px;
-  color: #fafafa;
+.header__title {
+    font-size: 60px;
+    color: #fafafa;
 }

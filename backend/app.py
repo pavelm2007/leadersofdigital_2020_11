@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_cors import CORS
 
 from api.api import api
@@ -22,7 +22,12 @@ def register_extensions(app):
 
 app = create_app(Config)
 
+
+@app.route('/')
+def main():
+    return render_template('index.html')
+
+
 # Run the application
-# if __name__ == '__main__':
-#     app = create_app(Config)
-#     app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80, debug=True, threaded=True)

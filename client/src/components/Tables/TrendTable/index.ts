@@ -1,3 +1,8 @@
-import TrendTable from "./TrendTable";
+import TrendTable, {ITrendTableRow} from "./TrendTable";
+import {getTrendTableData} from "./utils";
 
-export default TrendTable
+export {
+    TrendTable,
+    getTrendTableData
+};
+export type {ITrendTableRow};

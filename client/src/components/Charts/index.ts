@@ -1,3 +1,4 @@
-import { LineChart} from "./LineCharts";
+import {LineChart, getDynamicsProfessionData, ILineChartData} from "./LineCharts";
 
-export {LineChart}
+export {LineChart, getDynamicsProfessionData};
+export type {ILineChartData};

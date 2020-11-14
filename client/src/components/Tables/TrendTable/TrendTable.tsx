@@ -3,6 +3,8 @@ import DownTrendIcon from './icons/DownTrendIcon.svg'
 import UpTrendIcon from './icons/UpTrendIcon.svg'
 import {trendDown, trendUp} from "../../../constants";
 
+import './TrendTable.css'
+
 export interface ITrendTableRow {
     trend: string
     title: string
@@ -19,7 +21,7 @@ const TrendTable: React.FunctionComponent<ITrendTable> = ({items}) => {
     const getTrendIcon = (trend: string) => {
         if (trend === trendUp) {
             return UpTrendIcon
-        } else if (trend === trendDown){
+        } else if (trend === trendDown) {
             return DownTrendIcon
         }
     }
@@ -27,19 +29,19 @@ const TrendTable: React.FunctionComponent<ITrendTable> = ({items}) => {
         return (
             <tr key={key}>
                 <th><img src={getTrendIcon(item.trend)} alt=''/></th>
-                <td>{item.title}</td>
+                <td className={'trend-table__title'}>{item.title}</td>
                 <td>{item.value}</td>
             </tr>
         )
     }
 
     return (
-        <table className="table table-striped">
+        <table className="table table-striped trend-table">
             <thead>
             <tr>
                 <th>&nbsp;</th>
                 <th>Специальность</th>
-                <th>Изменение</th>
+                <th>Изменение, %</th>
             </tr>
             </thead>
             <tbody>

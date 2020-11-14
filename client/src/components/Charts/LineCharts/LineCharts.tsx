@@ -1,6 +1,5 @@
 import React from "react";
 import {Chart} from "react-charts";
-import useDemoConfig from "./useDemoConfig";
 import './LineCharts.css'
 
 export interface ILineChartDataItem {

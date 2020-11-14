@@ -2,8 +2,16 @@
     padding-top: 15px !important;
 }
 
+.u-pt-30 {
+    padding-top: 40px !important;
+}
+
 .u-pb-15 {
     padding-bottom: 15px !important;
+}
+
+.u-pb-30 {
+    padding-bottom: 40px !important;
 }
 
 .u-m-0 {
@@ -93,11 +101,6 @@
 .u-color-black {
     color: #696969;
 }
-
-.header__wrapper {
-    background: #128277;
-}
-
 
 .header__title {
     font-family: Oswald;

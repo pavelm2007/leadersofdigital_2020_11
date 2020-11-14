@@ -7,11 +7,11 @@ interface ISectionHeader {
 
 const SectionHeader: React.FunctionComponent<ISectionHeader> = ({title}) => {
     return (
-        <div className={'container-fluid section__wrapper'}>
+        <div className={'container-fluid section-header__wrapper'}>
             <div className={'row'}>
                 <div className={'container'}>
                     <div className={'col-12 u-mt-15 u-mb-15'}>
-                        <p className={'section__title u-fs-22 u-color-green u-text-upper text-center'}>
+                        <p className={'section-header__title u-fs-22 u-color-green u-text-upper text-center'}>
                             {title}
                         </p>
                     </div>
