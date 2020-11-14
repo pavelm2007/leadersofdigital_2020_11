@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+.idea
+.vscode
+backend/venv
+backend/api/__pycache__
+client/node_modules
+client/build
