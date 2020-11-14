@@ -1,5 +1,5 @@
-// const host = '0.0.0.0:5000'
-const host = 'darkbrotherhood.pythonanywhere.com'
+const host = '0.0.0.0:5000'
+// const host = 'darkbrotherhood.pythonanywhere.com'
 
 export const fetchDynamicsProfession = (query = '') => {
     let url = `//${host}/api/v1/professions/dynamic/`

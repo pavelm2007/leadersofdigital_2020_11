@@ -114,11 +114,13 @@ function App() {
             <PageHeader/>
             <section className={'u-mb-15'}>
                 <SectionHeader title={'Прогноз изменения спроса на профессии в России'}/>
-                <div className={'row'}>
-                    <div className={'col-12'}>
-                        <div className={'u-mb-50'}/>
-                        <LineChart data={dynamicsProfession}/>
-                        <div className={'u-mb-50'}/>
+                <div className={'container'}>
+                    <div className={'row'}>
+                        <div className={'col-12'}>
+                            <div className={'u-mb-50'}/>
+                            <LineChart data={dynamicsProfession}/>
+                            <div className={'u-mb-50'}/>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -129,12 +131,12 @@ function App() {
                         <div className={'col-6'}>
                             <ColHeader title={'Набирающие популярность профессии'}/>
                             <div className={'u-mb-30'}/>
-                            <TrendTable key={trendUp} items={trendUpProfession} />
+                            <TrendTable key={trendUp} items={trendUpProfession}/>
                         </div>
                         <div className={'col-6'}>
                             <ColHeader title={'Уходящие профессии'}/>
                             <div className={'u-mb-30'}/>
-                            <TrendTable key={trendDown} items={trendDownProfession} />
+                            <TrendTable key={trendDown} items={trendDownProfession}/>
                         </div>
                     </div>
                 </div>

@@ -41,11 +41,11 @@ const LineChart: React.FunctionComponent<ILineChart> = ({data}) => {
 
 
     return (
-        <div className={'container'}>
+        // <div className={'container'}>
             <div style={{width: '100%', height: '350px'}}>
                 <Chart {...chartData} series={series} axes={axes} tooltip/>
             </div>
-        </div>
+        // </div>
     );
 }
 

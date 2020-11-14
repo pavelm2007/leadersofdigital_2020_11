@@ -102,6 +102,8 @@
     color: #696969;
 }
 
+.no-flex{flex: none !important;}
+
 .header__title {
     font-family: Oswald;
     font-size: 60px;
